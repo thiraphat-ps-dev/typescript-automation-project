@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint 'src/**/*.{js,ts}'",
-    "format": "prettier --write 'src/**/*.{js,ts}'",
+    "format": "prettier --write \"**/*.{js,ts,json,css,md}\"",
     "build": "webpack",
     "start": "node dist/bundle.js",
     "prepare": "husky install"
@@ -18,7 +18,7 @@
     "@types/jest": "^29.0.0",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
@@ -33,7 +33,15 @@
     "webpack-cli": "^4.0.0"
   },
   "lint-staged": {
-    "*.ts": "jest --bail --findRelatedTests"
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix",
+      "jest --bail --findRelatedTests",
+      "git add"
+    ],
+    "*.{js,json,css,md,html}": [
+      "prettier --write",
+      "git add"
+    ]
   }
-  
 }
