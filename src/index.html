@@ -1,112 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TypeScript Automation Project</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-    header {
-      width: 100%;
-      background-color: #333;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-    nav {
-      margin: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 700;
-    }
-    #app {
-      width: 80%;
-      max-width: 800px;
-      margin: 20px;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-    #app h2 {
-      margin-top: 0;
-    }
-    section {
-      margin-bottom: 20px;
-    }
-    footer {
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      position: absolute;
-      bottom: 0;
-    }
-    @media (max-width: 600px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Automation Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
       body {
-        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        color: #333;
       }
-      #app {
+      header {
         width: 100%;
-        padding: 10px;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+      nav {
+        margin: 10px 0;
       }
       nav a {
-        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 700;
       }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>TypeScript Automation Project</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <div id="app">
-    <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to the TypeScript Automation Project. This project is a demonstration of modern web development using TypeScript and Webpack.</p>
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>This project aims to showcase the best practices in setting up a TypeScript project with automated build processes, testing, and deployment.</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>For more information, please contact us at <a href="mailto:info@typescriptproject.com">info@typescriptproject.com</a>.</p>
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 20241 TypeScript Automation Project. All rights reserved.</p>
-  </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const appDiv = document.getElementById('app');
-      appDiv.innerHTML += '<p>TypeScript is up and running!</p>';
-    });
-  </script>
-  <script src="bundle.js"></script>
-</body>
+      #app {
+        width: 80%;
+        max-width: 800px;
+        margin: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+      #app h2 {
+        margin-top: 0;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      footer {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+      }
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+        #app {
+          width: 100%;
+          padding: 10px;
+        }
+        nav a {
+          margin: 0 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TypeScript Automation Project</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div id="app">
+      <section id="home">
+        <h2>Home</h2>
+        <p>
+          Welcome to the TypeScript Automation Project. This project is a
+          demonstration of modern web development using TypeScript and Webpack.
+        </p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          This project aims to showcase the best practices in setting up a
+          TypeScript project with automated build processes, testing, and
+          deployment.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          For more information, please contact us at
+          <a href="mailto:info@typescriptproject.com"
+            >info@typescriptproject.com</a
+          >.
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 TypeScript Automation Project. All rights reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const appDiv = document.getElementById('app');
+        appDiv.innerHTML += '<p>TypeScript is up and running!</p>';
+      });
+    </script>
+    <script src="bundle.js"></script>
+  </body>
 </html>
